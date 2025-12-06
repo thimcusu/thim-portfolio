@@ -12,10 +12,11 @@
     "@tanstack/start": "latest",
     "isbot": "^5.1.17",
     "motion": "^12.23.24",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1"
   },
   "devDependencies": {
+    "@netlify/vite-plugin-tanstack-start": "^1.2.2",
     "@tailwindcss/postcss": "^4.1.17",
     "@tailwindcss/vite": "^4.1.17",
     "@tanstack/router-plugin": "latest",
@@ -27,7 +28,7 @@
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.17",
     "typescript": "^5.7.2",
-    "vite": "^6.0.1",
+    "vite": "^7.2.6",
     "vite-tsconfig-paths": "^5.1.3"
   }
 }

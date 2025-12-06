@@ -7,6 +7,7 @@ export default {
       colors: {
         // Primary accent color (teal)
         primary: '#64ffda',
+        'primary-dark': '#0a8f6f', // Darker teal for light mode
 
         // Navy backgrounds
         navy: '#0a192f',

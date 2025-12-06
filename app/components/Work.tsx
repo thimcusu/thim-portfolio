@@ -1,38 +1,47 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 
-const experiences = [
+interface Experience {
+  company: string;
+  title: string;
+  period: string;
+  url?: string;
+  description: string[];
+}
+
+const experiences: Experience[] = [
   {
-    company: 'Upstatement',
-    title: 'Lead Engineer',
-    period: 'May 2018 - Present',
-    url: 'https://upstatement.com/',
+    company: 'mgm technology partners',
+    title: 'Frontend Developer',
+    period: 'July 2022 - Present',
+    url: 'https://www.mgm-tp.com/',
     description: [
-      'Write modern, performant, maintainable code for a diverse array of client and internal projects',
-      'Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify',
-      'Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis',
+      'Build web applications using modern front-end frameworks, collaborating effectively with back-end teams and international colleagues to consistently deliver high-quality results',
+      'Leverage internal low-code platforms to accelerate development cycles and enhance digital workflow processes for public-sector clients across Germany',
+      'Contribute to the development of A12, an internal low-code library that enables business experts to efficiently create application components',
+      'Support public-sector initiatives by helping digitalize administrative services for tax consultants chambers',
     ],
   },
   {
-    company: 'Apple',
-    title: 'UI Engineer',
-    period: 'July - December 2017',
-    url: 'https://www.apple.com/',
+    company: 'Mynavi TechTus Vietnam',
+    title: 'Frontend Developer',
+    period: 'October 2020 - September 2022',
+    url: 'https://www.mynavi.jp/',
     description: [
-      "Developed and styled interactive web apps for Apple Music, including the UI of Apple Music's embeddable web player widget",
-      'Built and shipped the Apple Music Extension within Facebook Messenger leveraging third-party and internal API integrations',
-      "Architected and implemented the front-end of Apple Music's embeddable web player widget",
+      'Worked with a variety of frameworks including Vanilla JavaScript and jQuery to speed up project development phases in offshore team environments',
+      'Developed a B2C food-ordering website leveraging a CMS for rapid content and feature management',
+      'Created an IoT solution for driving activity reporting, featuring visualizations using videos, maps, charts, and canvas graphics',
+      'Became familiar with multiple programming languages while collaborating in international offshore teams',
     ],
   },
   {
-    company: 'Starry',
-    title: 'Software Engineer',
-    period: 'July - December 2016',
-    url: 'https://starry.com/',
+    company: 'Code Engine Studio',
+    title: 'Intern Frontend Developer',
+    period: 'January 2020 - May 2020',
     description: [
-      "Engineered and improved major features of Starry's customer-facing Android app",
-      'Proposed and implemented scalable solutions to issues identified with cloud services and applications responsible for communicating with the Starry Station internet router',
-      'Collaborated with designers and other developers to create thoughtful user experiences',
+      'Developed web applications using MERN stack (MongoDB, Express, React, Node.js)',
+      'Participated in English training and learned professional work principles',
+      'Gained hands-on experience with full-stack JavaScript development',
     ],
   },
 ];

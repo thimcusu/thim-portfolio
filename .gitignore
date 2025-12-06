@@ -7,3 +7,6 @@ dist
 .DS_Store
 app.config.timestamp_*.js
 .github-pages-cache
+
+# Local Netlify folder
+.netlify

@@ -84,8 +84,8 @@ export function Navigation() {
             )}
           </button>
           <a
-            href="/profile.jpg"
-            download="CV.jpg"
+            href="/Hoang_Cao_Thiem_Resume.pdf"
+            download="Hoang_Cao_Thiem_Resume.pdf"
             className="flex items-center gap-2 rounded border border-primary-light px-4 py-2 font-mono text-sm text-primary-light transition-all hover:bg-primary-light/10 dark:border-primary dark:text-primary dark:hover:bg-primary/10"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -28,7 +28,7 @@ const projects: Project[] = [
   {
     title: 'Clerk portal',
     description:
-      'An administrative management system for tax chamber clerks to oversee training organizations for tax advisors and consultants. The platform enables clerks to manage member registrations, training program approvals, certification tracking, and organizational oversight. Features integrated messaging and email communication systems for direct correspondence with members and training institutions, along with document processing, workflow automation, and comprehensive reporting dashboards.',
+      'An administrative management system for tax chamber clerks to oversee training organizations for tax advisors and consultants. The platform enables clerks to manage member registrations, training program approvals, certification tracking, and organizational oversight. Features integrated document processing, workflow automation, and comprehensive reporting dashboards.',
     image: '/images/sbap.png',
     technologies: ['React', 'Redux', 'ReduxSaga', 'A12', 'styled-components'],
   },
@@ -80,7 +80,12 @@ export function Projects() {
             {/* Image */}
             {project.image && (
               <div className="lg:col-span-7 relative group">
-                <a href={project.external} className="block relative overflow-hidden rounded bg-primary-light/10 dark:bg-primary/10">
+                <a
+                  href={project.external}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block relative overflow-hidden rounded bg-primary-light/10 dark:bg-primary/10"
+                >
                   <img src={project.image} alt={project.title} className="w-full h-full object-cover aspect-video" />
                   <div className="absolute inset-0 bg-primary-light/20 group-hover:bg-transparent transition-all dark:bg-primary/20"></div>
                 </a>
@@ -91,7 +96,9 @@ export function Projects() {
             <div className={`${project.image ? 'lg:col-span-5' : ''} ${i % 2 === 0 ? '' : 'lg:text-right'}`}>
               <p className="font-mono text-primary-light dark:text-primary text-sm mb-2">Featured Project</p>
               <h3 className="text-2xl font-bold text-light-text dark:text-slate-lightest mb-4 hover:text-primary-light dark:hover:text-primary transition-colors">
-                <a href={project.external}>{project.title}</a>
+                <a href={project.external} target="_blank" rel="noopener noreferrer">
+                  {project.title}
+                </a>
               </h3>
               <div className="bg-light-surface dark:bg-navy-light p-6 rounded shadow-lg mb-4">
                 <p className="text-light-text-muted dark:text-slate-light leading-relaxed">{project.description}</p>
@@ -107,6 +114,8 @@ export function Projects() {
                 {project.github && (
                   <a
                     href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-light-text-muted hover:text-primary-light transition-colors dark:text-slate-light dark:hover:text-primary"
                   >
                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -117,6 +126,8 @@ export function Projects() {
                 {project.external && (
                   <a
                     href={project.external}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-light-text-muted hover:text-primary-light transition-colors dark:text-slate-light dark:hover:text-primary"
                   >
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -19,7 +19,7 @@ function Home() {
         {/* Hero Section */}
         <section id="hero" className="flex min-h-screen flex-col justify-center py-10 md:py-20 lg:py-0">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="max-w-3xl">
-            <p className="mb-5 text-base font-mono text-primary">Hi, my name is</p>
+            <p className="mb-5 text-base font-mono text-primary-dark dark:text-primary">Hi, my name is</p>
             <h1 className="text-5xl font-bold leading-tight text-light-text dark:text-slate-lightest sm:text-6xl md:text-7xl">
               Hoang Cao Thiem.
             </h1>
@@ -32,7 +32,7 @@ function Home() {
             </p>
             <a
               href="#contact"
-              className="mt-12 inline-block rounded border border-primary px-7 py-5 font-mono text-sm text-primary transition-all hover:bg-primary/10"
+              className="mt-12 inline-block rounded border border-primary-dark px-7 py-5 font-mono text-sm text-primary-dark transition-all hover:bg-primary-dark/10 dark:border-primary dark:text-primary dark:hover:bg-primary/10"
             >
               Get In Touch
             </a>
@@ -65,7 +65,7 @@ function Home() {
           </svg>
         </a>
         <a
-          href="https://linkedin.com"
+          href="https://www.linkedin.com/in/hcthiem/"
           target="_blank"
           rel="noopener noreferrer"
           className="mb-5 text-light-text-muted transition-all hover:-translate-y-1 hover:text-primary-light dark:text-slate dark:hover:text-primary"
