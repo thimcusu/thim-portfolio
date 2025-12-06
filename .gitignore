@@ -1,0 +1,9 @@
+node_modules
+.output
+dist
+.env
+.env.local
+.env.*.local
+.DS_Store
+app.config.timestamp_*.js
+.github-pages-cache
